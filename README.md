@@ -19,7 +19,6 @@ Welcome to the AI-Driven Snake Game! This project is a modern take on the classi
   - [🕹️ Usage](#️-usage)
   - [⚙️ Configuration](#️-configuration)
   - [🧠 AI Algorithms](#-ai-algorithms)
-  - [🖼️ Screenshots](#️-screenshots)
   - [🤝 Contributing](#-contributing)
   - [📜 License](#-license)
   - [📬 Contact](#-contact)
@@ -89,13 +88,6 @@ Modify the configuration settings in `src/config/Constants.py`:
 **AI Directory**:
 - `algorithm.py`: General AI algorithms and utility functions.
 - `neural_network.py`: Neural network implementations for AI-based control.
-
-## 🖼️ Screenshots
-
-![Menu Screenshot](docs\images\mainMenu.png)
-![LOAD Screenshot](docs\images\load.gif)
-![ASTAR Screenshot](docs\images\astar.gif) ![BFS Screenshot](docs\images\bfs.gif) ![DFS Screenshot](docs\images\dfs.gif)
-
 
 ## 🤝 Contributing
 
