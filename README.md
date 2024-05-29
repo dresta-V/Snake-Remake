@@ -2,7 +2,11 @@
 
 Welcome to the AI-Driven Snake Game! This project is a modern take on the classic Snake game, enhanced with artificial intelligence. Choose from various AI algorithms like A*, BFS, DFS, and Genetic Algorithm to see how they control the snake's movements toward its prey.
 
-![Snake Game Banner](path/to/banner-image.png)
+<div align="left">
+<p align="left">
+<img  width="20%" src="docs/images/mainMenu.png" /> <img  width="20%" src="docs/images/astar.gif" /> <img  width="20%" src="docs/images/bfs.gif" /> <img  width="20%" src="docs/images/dfs.gif"/> <img  width="20%" src="docs/images/ga.gif" />
+</p>
+</div>
 
 ## 📜 Table of Contents
 
