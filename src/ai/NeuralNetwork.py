@@ -1,5 +1,5 @@
 import numpy as np
-from ..config.Constants import USER_SEED
+from src.config.Constants import USER_SEED
 
 np.random.seed(USER_SEED)
 

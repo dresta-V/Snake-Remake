@@ -22,10 +22,10 @@ BTN_CLICKED = (94, 219, 111)
 TXT_PASSIVE = (162, 163, 163)
 TXT_ACTIVE = (94, 219, 111)
 
-# 3) snake + path + fruit
+# 3) snake + path + Prey
 SNAKE_COLOR = (235, 235, 235)
 SNAKE_HEAD_COLOR = (106, 164, 189)
-FRUIT_COLOR = (219, 90, 101)
+Prey_COLOR = (219, 90, 101)
 PATHCOLOR = (41, 255, 3, 50)
 
 # 4) related to screen

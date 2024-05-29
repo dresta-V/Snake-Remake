@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
-from ..config.Constants import NO_OF_CELLS, BANNER_HEIGHT
-from ..config.Utility import Node
+from src.config.Constants import NO_OF_CELLS, BANNER_HEIGHT
+from src.config.Utility import Node
 import math
 
 
@@ -13,7 +13,7 @@ class Algorithm(ABC):
         self.path = []
 
     def get_initstate_and_goalstate(self, snake):
-        return Node(snake.get_x(), snake.get_y()), Node(snake.get_fruit().x, snake.get_fruit().y)
+        return Node(snake.get_x(), snake.get_y()), Node(snake.get_Prey().x, snake.get_Prey().y)
 
     def manhattan_distance(self, nodeA, nodeB):
         distance_1 = abs(nodeA.x - nodeB.x)

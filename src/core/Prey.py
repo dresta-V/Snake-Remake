@@ -1,5 +1,5 @@
 from pygame.math import Vector2
-from ..config.Constants import BANNER_HEIGHT, NO_OF_CELLS, USER_SEED
+from src.config.Constants import BANNER_HEIGHT, NO_OF_CELLS, USER_SEED
 import random
 
 random.seed(USER_SEED)

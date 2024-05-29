@@ -1,6 +1,6 @@
 from pygame.math import Vector2
-from Prey import Prey
-from ..ai.NeuralNetwork import NeuralNework
+from .Prey import Prey
+from src.ai.NeuralNetwork import NeuralNework
 import pickle
 
 class Snake:

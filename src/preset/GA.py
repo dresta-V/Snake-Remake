@@ -1,9 +1,9 @@
-from ..ai.Algorithm import Algorithm
-from ..core.Snake import Snake
+from src.ai.Algorithm import Algorithm
+from src.core.Snake import Snake
 import math
 import random
-from ..config.Utility import Node
-from ..config.Constants import NO_OF_CELLS, BANNER_HEIGHT, USER_SEED
+from src.config.Utility import Node
+from src.config.Constants import NO_OF_CELLS, BANNER_HEIGHT, USER_SEED
 import numpy as np
 random.seed(USER_SEED)
 
@@ -81,7 +81,7 @@ class GA(Algorithm):
 
     def run_algorithm(self, snake):
         inputs = []
-        fruit = Node(snake.get_fruit().x, snake.get_fruit().y)
+        Prey = Node(snake.get_Prey().x, snake.get_Prey().y)
 
         # head direction
         x = snake.body[0].x
@@ -124,9 +124,9 @@ class GA(Algorithm):
         self.check_directions(snake, right, inputs)
 
         # suggest closest movment to the apple
-        forward_to_apple = self.euclidean_distance(fruit, forward)
-        left_to_apple = self.euclidean_distance(fruit, left)
-        right_to_apple = self.euclidean_distance(fruit, right)
+        forward_to_apple = self.euclidean_distance(Prey, forward)
+        left_to_apple = self.euclidean_distance(Prey, left)
+        right_to_apple = self.euclidean_distance(Prey, right)
 
         values = [forward_to_apple, left_to_apple, right_to_apple]
         min_indx = values.index(min(values))
@@ -134,9 +134,9 @@ class GA(Algorithm):
         # possible values [0, 1, 2] <- same as output values
         inputs.append(min_indx)
 
-        # angle between head and fruit
+        # angle between head and Prey
         a = np.array([int(snake.body[0].x), int(snake.body[0].y)])
-        b = np.array([fruit.x, fruit.y])
+        b = np.array([Prey.x, Prey.y])
 
         inner = np.inner(a, b)
         norms = np.linalg.norm(a) * np.linalg.norm(b)

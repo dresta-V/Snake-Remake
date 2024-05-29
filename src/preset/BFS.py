@@ -1,6 +1,6 @@
 from collections import deque
-from ..config.Utility import Node
-from ..ai.Algorithm import Algorithm
+from src.config.Utility import Node
+from src.ai.Algorithm import Algorithm
 
 
 class BFS(Algorithm):

@@ -1,4 +1,4 @@
-from ..ai.Algorithm import Algorithm
+from src.ai.Algorithm import Algorithm
 
 
 class A_STAR(Algorithm):

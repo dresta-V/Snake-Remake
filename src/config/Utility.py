@@ -1,4 +1,4 @@
-from Constants import NO_OF_CELLS
+from src.config.Constants import NO_OF_CELLS
 
 
 class Node:
